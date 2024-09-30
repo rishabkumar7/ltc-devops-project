@@ -1,6 +1,6 @@
 # LTC DevOps Project
 
-This is the sample application for the DevOps Capstone Project.
+This is the sample application for the DevOps Capstone Project on [Learn to Cloud.](https://learntocloud.guide)
 It shows your favorite TV Shows or movies, the front-end is in React and the API is written in Python using FastAPI.
 
 ## Application
@@ -34,12 +34,17 @@ The front-end code exits in the `frontend` directory. You can run the front-end 
 - Run the NextJS Server: `npm start`
 - Your Front-end Server should be running on `http://localhost:3000`
 
-
 ## Goal
 
 The goal is to get hands-on with DevOps practices like Containerization, CICD and monitoring.
 
-Look at the capstone project for more detials.
+- Containerize the Application: Create Dockerfiles for both api and frontend.
+- CI/CD: Setup CI/CD pipeline to push images to Dockerhub or other container registries like [ACR](https://azure.microsoft.com/en-us/products/container-registry) or [ECR](https://aws.amazon.com/ecr/).
+- Infrastructure as Code: Deploy a Kubernetes cluster to your choice of cloud provider, using Terraform.
+- Kubernetes: Create deployments for both of your containers using YAML files, and deploy it to your cluster.
+- Monitoring: Setup monitoring for your cluster, look into Prometheus and Grafana.
+
+Look at the [Phase 4 capstone project](https://learntocloud.guide/phase4/) for more details.
 
 ## Author
 
