@@ -1,0 +1,4 @@
+fastapi 
+azure-cosmos 
+uvicorn
+python-dotenv
