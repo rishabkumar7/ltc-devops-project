@@ -1,4 +1,5 @@
 from fastapi import FastAPI, HTTPException, Query
+from fastapi.middleware.cors import CORSMiddleware
 from azure.cosmos import CosmosClient
 from dotenv import load_dotenv
 import os
@@ -8,6 +9,16 @@ from typing import Optional
 load_dotenv()
 
 app = FastAPI()
+
+
+# Enable CORS
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000"],  # React app's URL
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Initialize the Cosmos DB client using environment variables
 endpoint = os.getenv("CosmosDBEndpoint")
