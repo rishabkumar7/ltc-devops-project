@@ -6,8 +6,10 @@ It shows your favorite TV Shows or movies, the front-end is in React and the API
 ## Application
 
 **Front-End** - A web application where users can view.
+![React Frontend application](./images/react-frontend.png)
 
 **API**: API that receives request to fetch TV Shows or Movies data, stored in NoSQL Database. For this sample app I am using CosmosDB from Azure. But you can modify the code according to your provider within the API.
+![API for TV Shows](./images/api-tvshows.png)
 
 ## Running locally
 
